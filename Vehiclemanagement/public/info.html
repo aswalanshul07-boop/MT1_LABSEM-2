@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Management - Info</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; color: #222; }
+    h1 { border-bottom: 2px solid #444; padding-bottom: 8px; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Vehicle Management Web Application</h1>
+  <p>This page is a static file served using the Node.js <code>fs</code> module.</p>
+
+  <h2>Part A: HTTP Server (port 3000)</h2>
+  <ul>
+    <li><code>GET /</code> welcome page</li>
+    <li><code>GET /vehicles</code> all vehicles (JSON)</li>
+    <li><code>GET /about</code> application info</li>
+    <li><code>GET /info</code> this page</li>
+    <li><code>POST /add-vehicle</code> add a vehicle</li>
+  </ul>
+
+  <h2>Part B: Express REST API (port 4000)</h2>
+  <ul>
+    <li><code>GET /vehicles</code>, <code>GET /vehicles/:id</code></li>
+    <li><code>POST /vehicles</code></li>
+    <li><code>PUT /vehicles/:id</code></li>
+    <li><code>DELETE /vehicles/:id</code></li>
+  </ul>
+
+  <p>Built with Node.js, HTTP module, FS module and Express.js. No database is used.</p>
+</body>
+</html>
